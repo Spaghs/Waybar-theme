@@ -1,0 +1,121 @@
+#workspaces button:hover,
+#network:hover,
+#custom-power:hover,
+#pulseaudio:hover,
+#pulseaudio-slider slider:hover {
+  transition: 0.5s;  
+}
+
+#workspaces,
+#custom-power,
+#clock,
+#network,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#pulseaudio-slider
+{
+  background: #FEF;
+  border-top: #f3c5e2 5px solid;
+  border-bottom: #f3c5e2 5px solid;
+  color: #b385a2;
+}
+
+#network,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#pulseaudio-slider
+{
+  padding: 0 10px;  
+}
+
+window#waybar {
+  background: transparent;
+  border-top: #f3c5e2 5px solid;
+}
+
+#workspaces {
+  border: #f3c5e2 5px solid;
+  border-radius: 0 0 30px 30px;
+  font-size: 20px;
+}
+
+#workspaces button {
+  border: 2px transparent solid;
+  border-radius: 50%;
+}
+
+#workspaces button:hover {
+  border: 2px solid #f3c5e2;
+  border-radius: 0 0 30px 30px;
+}
+
+#custom-power:hover,
+#network:hover {
+  background: #fdf;
+}
+
+#clock {
+  border-left: 5px #f3c5e2 solid;
+  border-radius: 0 0 0 30px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+#custom-power {
+  border-radius: 0 0 30px 0;
+  border: 5px solid #f3c5e2;
+  padding: 0 15px;
+  color: #b385a2;
+}
+
+#pulseaudio {
+  padding-right: 0;
+}
+
+#pulseaudio-slider {
+  margin-right: 20px;
+  border-radius: 0 0 30px 0;
+  border: 5px solid #f3c5e2;
+  border-left: none;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+#pulseaudio-slider trough {
+  min-width: 80px;
+  background: #f3c5e2;
+  border: none;
+}
+
+#pulseaudio-slider slider {
+  background: #FEF;
+  border: 1px solid #f3c5e2;
+}
+
+#pulseaudio-slider slider:hover {
+  background: #FDF;
+}
+
+#pulseaudio-slider highlight {
+  background: #b385a2;
+  border: none;
+}
+
+#temperature.critical {
+  background: #FAC;
+  color: #FEF;
+}
+
+#network {
+  border-radius: 0 0 0 30px;
+  border: 5px solid #f3c5e2;
+  border-right: none;
+  padding-left: 15px;
+  font-size: 35px;
+  color: #b385a2;
+}
+
