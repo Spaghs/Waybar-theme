@@ -40,7 +40,6 @@ window#waybar {
 #workspaces {
   border: #f3c5e2 5px solid;
   border-radius: 0 0 30px 30px;
-  font-size: 20px;
 }
 
 #workspaces button {
@@ -115,7 +114,6 @@ window#waybar {
   border: 5px solid #f3c5e2;
   border-right: none;
   padding-left: 15px;
-  font-size: 35px;
   color: #b385a2;
 }
 

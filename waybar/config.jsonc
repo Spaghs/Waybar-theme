@@ -18,7 +18,7 @@
     }
   },
   "clock": {
-    "format":"<span font='14'></span> {:%H:%M %A} ",
+    "format":"<span></span> {:%H:%M %A} ",
     "tooltip":true,
     "interval": 1,
     "tooltip-format": "<small><tt>{calendar}</tt></small>",
@@ -34,19 +34,13 @@
     }
   },
   "custom/power": {
-    "format":"<span font='18'></span>",
+    "format":"<span></span>",
     "tooltip":false,
-    "menu":"on-click",
-    "menu-file":"$HOME/.config/waybar/power_menu.xml",
-    "menu-actions": {
-      "shutdown":"shutdown -h now",
-      "reboot":"reboot",
-      "suspend":"systemctl suspend"
-    }
+    "on-click":"wlogout",
   },
   
   "pulseaudio": {
-    "format":"<span font='16'>{icon}</span>",
+    "format":"<span>{icon}</span>",
     "format-icons": {
       "default":[
         "󰖁",
@@ -81,7 +75,7 @@
   },
 
   "cpu": {
-    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{usage}% <span font='20'></span>",
+    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{usage}% ",
     "format-icons": [
       "▁",
       "▂",
@@ -97,7 +91,7 @@
 
   "memory": {
     "interval": 1,
-    "format": "{}% <span font='20'></span>",
+    "format": "{}% ",
     "max-length": 10
   },
 
@@ -108,7 +102,7 @@
     "critical-threshold": 70,
     "interval":1,
     "format":"{temperatureC}°C ",
-    "format-critical":"{temperatureC}°C <span font='20'></span>"
+    "format-critical":"{temperatureC}°C <span></span>"
   }
 
 }
