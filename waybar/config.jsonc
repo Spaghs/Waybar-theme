@@ -1,24 +1,23 @@
 {
-  "layer":"top",
+  "layer":"bottom",
   "position":"top",
   "reload_style_on_change":true,
   "modules-center":["hyprland/workspaces"],
   "modules-right": ["network","cpu","temperature","memory","pulseaudio","pulseaudio/slider","clock"],
-  "modules-left":["custom/power","custom/restart"],
+  "modules-left":["custom/power","custom/cava"],
 
   "hyprland/workspaces": {
-    "format":"<span color='#d3a5c2'>{icon}</span>",
-    "format-icons":{
-      "active":"",
-      "default":"",
-      "empty":""
+    "format":"{icon}",
+    "format-icons": {
+      "active": "󰪥",
+      "default": "󰄰"
     },
     "persistent-workspaces":{
       "*":[1]
     }
   },
   "clock": {
-    "format":"<span></span> {:%H:%M %A} ",
+    "format":" {:%H:%M %A} ",
     "tooltip":true,
     "interval": 1,
     "tooltip-format": "<small><tt>{calendar}</tt></small>",
@@ -34,19 +33,24 @@
     }
   },
   "custom/power": {
-    "format":"<span></span>",
+    "format":"",
     "tooltip":false,
-    "on-click":"wlogout",
+    "on-click":"wlogout -b 1",
+  },
+
+  "custom/cava": {
+    "format":"{}",
+    "exec":"~/.config/waybar/cava.sh"
   },
   
   "pulseaudio": {
-    "format":"<span>{icon}</span>",
+    "format":"{icon}",
     "format-icons": {
       "default":[
         "󰖁",
         "󰕿",
         "󰖀",
-        "󰕾"
+        "󰕾",
       ]
     },
     "on-click": "pavucontrol",
@@ -75,17 +79,7 @@
   },
 
   "cpu": {
-    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{usage}% ",
-    "format-icons": [
-      "▁",
-      "▂",
-      "▃",
-      "▄",
-      "▅",
-      "▆",
-      "▇",
-      "█"
-    ],
+    "format": "{usage}% ",
     "interval":1
   },
 
@@ -102,7 +96,7 @@
     "critical-threshold": 70,
     "interval":1,
     "format":"{temperatureC}°C ",
-    "format-critical":"{temperatureC}°C <span></span>"
+    "format-critical":"{temperatureC}°C "
   }
 
 }
