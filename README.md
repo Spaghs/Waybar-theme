@@ -1,8 +1,8 @@
 # My Waybar theme
 
-![preview1](./images/Preview1.png)
+![preview](./images/Preview.png)
 
-![preview2](./images/Preview2.png)
+![preview1](./images/Preview1.png)
 
 ![preview3](./images/Preview3.png)
 
