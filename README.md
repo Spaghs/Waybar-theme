@@ -1,6 +1,10 @@
 # My Waybar theme
 
-![screenshot](./images/preview.png)
+![](./images/preview1.png)
+
+![](./images/preview2.png)
+
+![](./images/preview3.png)
 
 WIP
 Still need to change some things like power menu button and add more features.
