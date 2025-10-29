@@ -1,10 +1,10 @@
 # My Waybar theme
 
-![](./images/preview1.png)
+![preview1](./images/Preview1.png)
 
-![](./images/preview2.png)
+![preview2](./images/Preview2.png)
 
-![](./images/preview3.png)
+![preview3](./images/Preview3.png)
 
 WIP
 Still need to change some things like power menu button and add more features.
@@ -12,6 +12,6 @@ If you don't want to change any line of code, here are the requirements:
 - Hyprland
 - [Waybar-Cava](https://github.com/ray-pH/waybar-cava)
 - nmtui (Network Manager TUI)
-- WLogout
+- [WLogout](https://github.com/ArtsyMacaw/wlogout)
 
 Otherwise, you can edit it yourself and get rid of anything you don't want.
